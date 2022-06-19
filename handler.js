@@ -29,7 +29,7 @@ module.exports = {
                 if (user) {
                     if (!isNumber(user.exp)) user.exp = 99999999999999999999999999999999999999998999999999999999
                     if (!isNumber(user.limit)) user.limit = 99999999999999999999999999999999999999998999999999999999
-                    if (!isNumber(user.joinlimit)) user.joinlimit = 1
+                    if (!isNumber(user.joinlimit)) user.joinlimit = 99999999999999999999999999999999999999998999999999999999
                     if (!isNumber(user.money)) user.money = 9999999999999999999999999999999999999999899999999999999999999999999999999999999999999999999999998999999999999999
                     if (!isNumber(user.bank)) user.bank = 99999999999999999999999999999999999999998999999999999999
                     if (!isNumber(user.lastclaim)) user.lastclaim = 99999999999999999999999999999999999999998999999999999999
@@ -47,47 +47,47 @@ module.exports = {
                     if (!isNumber(user.premiumDate)) user.premiumDate = 0
                     if (!isNumber(user.bannedDate)) user.bannedDate = 0
                     if (!isNumber(user.warn)) user.warn = 0
-                    if (!isNumber(user.level)) user.level = 0
+                    if (!isNumber(user.level)) user.level = 99999999999999999999999999999999999999998999999999999999
                     if (!('role' in user)) user.role = 'Beginner'
                     if (!('autolevelup' in user)) user.autolevelup = true
 
-                    if (!isNumber(user.health)) user.health = 100
-                    if (!isNumber(user.healtmonster)) user.healtmonster = 100
-                    if (!isNumber(user.armormonster)) user.armormonster = 0
-                    if (!isNumber(user.potion)) user.potion = 0
-                    if (!isNumber(user.tiketcoin)) user.tiketcoin = 0
-                    if (!isNumber(user.healtmonster)) user.healtmonster = 0
-                    if (!isNumber(user.pc)) user.pc = 0
+                    if (!isNumber(user.health)) user.health = 99999999999999999999999999999999999999998999999999999999
+                    if (!isNumber(user.healtmonster)) user.healtmonster = 99999999999999999999999999999999999999998999999999999999
+                    if (!isNumber(user.armormonster)) user.armormonster = 99999999999999999999999999999999999999998999999999999999
+                    if (!isNumber(user.potion)) user.potion = 99999999999999999999999999999999999999998999999999999999
+                    if (!isNumber(user.tiketcoin)) user.tiketcoin = 99999999999999999999999999999999999999998999999999999999
+                    if (!isNumber(user.healtmonster)) user.healtmonster = 99999999999999999999999999999999999999998999999999999999
+                    if (!isNumber(user.pc)) user.pc = 99999999999999999999999999999999999999998999999999999999
                     if (!isNumber(user.spammer)) user.spammer = 0
-                    if (!isNumber(user.expg)) user.expg = 0
-                    if (!isNumber(user.trash)) user.trash = 0
-                    if (!isNumber(user.sampah)) user.sampah = 0
-                    if (!isNumber(user.wood)) user.wood = 0
-                    if (!isNumber(user.rock)) user.rock = 0
-                    if (!isNumber(user.string)) user.string = 0
-                    if (!isNumber(user.petFood)) user.petFood = 0
+                    if (!isNumber(user.expg)) user.expg = 99999999999999999999999999999999999999998999999999999999
+                    if (!isNumber(user.trash)) user.trash = 99999999999999999999999999999999999999998999999999999999
+                    if (!isNumber(user.sampah)) user.sampah = 99999999999999999999999999999999999999998999999999999999
+                    if (!isNumber(user.wood)) user.wood = 99999999999999999999999999999999999999998999999999999999
+                    if (!isNumber(user.rock)) user.rock = 99999999999999999999999999999999999999998999999999999999
+                    if (!isNumber(user.string)) user.string = 99999999999999999999999999999999999999998999999999999999
+                    if (!isNumber(user.petFood)) user.petFood = 99999999999999999999999999999999999999998999999999999999
 
-                    if (!isNumber(user.emerald)) user.emerald = 0
-                    if (!isNumber(user.diamond)) user.diamond = 0
-                    if (!isNumber(user.berlian)) user.berlian = 0
-                    if (!isNumber(user.emas)) user.emas = 0
-                    if (!isNumber(user.gold)) user.gold = 0
-                    if (!isNumber(user.iron)) user.iron = 0
-                    if (!isNumber(user.string)) user.string = 0
+                    if (!isNumber(user.emerald)) user.emerald = 99999999999999999999999999999999999999998999999999999999
+                    if (!isNumber(user.diamond)) user.diamond = 99999999999999999999999999999999999999998999999999999999
+                    if (!isNumber(user.berlian)) user.berlian = 99999999999999999999999999999999999999998999999999999999
+                    if (!isNumber(user.emas)) user.emas = 99999999999999999999999999999999999999998999999999999999
+                    if (!isNumber(user.gold)) user.gold = 99999999999999999999999999999999999999998999999999999999
+                    if (!isNumber(user.iron)) user.iron = 99999999999999999999999999999999999999998999999999999999
+                    if (!isNumber(user.string)) user.string = 99999999999999999999999999999999999999998999999999999999
                     
-                    if (!isNumber(user.anggur)) user.anggur = 0
-                    if (!isNumber(user.jeruk)) user.jeruk = 0
-                    if (!isNumber(user.mangga)) user.mangga = 0
-                    if (!isNumber(user.apel)) user.apel = 0
-                    if (!isNumber(user.pisang)) user.pisang = 0
-                    if (!isNumber(user.bibitanggur)) user.bibitanggur = 0
-                    if (!isNumber(user.bibitjeruk)) user.bibitjeruk = 0
-                    if (!isNumber(user.bibitmangga)) user.bibitmangga = 0
-                    if (!isNumber(user.bibitapel)) user.bibitapel = 0
-                    if (!isNumber(user.bibitpisang)) user.bibitpisang = 0
-                    if (!isNumber(user.gardenboxs)) user.gardenboxs = 0
+                    if (!isNumber(user.anggur)) user.anggur = 99999999999999999999999999999999999999998999999999999999
+                    if (!isNumber(user.jeruk)) user.jeruk = 99999999999999999999999999999999999999998999999999999999
+                    if (!isNumber(user.mangga)) user.mangga = 99999999999999999999999999999999999999998999999999999999
+                    if (!isNumber(user.apel)) user.apel = 99999999999999999999999999999999999999998999999999999999
+                    if (!isNumber(user.pisang)) user.pisang = 99999999999999999999999999999999999999998999999999999999
+                    if (!isNumber(user.bibitanggur)) user.bibitanggur = 99999999999999999999999999999999999999998999999999999999
+                    if (!isNumber(user.bibitjeruk)) user.bibitjeruk = 99999999999999999999999999999999999999998999999999999999
+                    if (!isNumber(user.bibitmangga)) user.bibitmangga = 99999999999999999999999999999999999999998999999999999999
+                    if (!isNumber(user.bibitapel)) user.bibitapel = 99999999999999999999999999999999999999998999999999999999
+                    if (!isNumber(user.bibitpisang)) user.bibitpisang = 99999999999999999999999999999999999999998999999999999999
+                    if (!isNumber(user.gardenboxs)) user.gardenboxs = 99999999999999999999999999999999999999998999999999999999
                     
-                    if (!isNumber(user.botol)) user.botol = 0
+                    if (!isNumber(user.botol)) user.botol = 99999999999999999999999999999999999999998999999999999999
                     if (!isNumber(user.kardus)) user.kardus = 0
                     if (!isNumber(user.kaleng)) user.kaleng = 0
                     if (!isNumber(user.aqua)) user.aqua = 0
@@ -276,14 +276,14 @@ module.exports = {
                 } else global.db.data.users[m.sender] = {
                     exp: 99999999999999999999999999999999999999998999999999999999,
                     limit: 99999999999999999999999999999999999999998999999999999999,
-                    joinlimit: 1,
+                    joinlimit: 99999999999999999999999999999999999999998999999999999999,
                     spammer: 0,
                     money: 99999999999999999999999999999999999999998999999999999999,
                     bank: 99999999999999999999999999999999999999998999999999999999,
                     health: 99999999999999999999999999999999999999998999999999999999,
-                    tiketcoin: 0,
-                    healtmonster: 100,
-                    armormonster: 0,
+                    tiketcoin: 99999999999999999999999999999999999999998999999999999999,
+                    healtmonster: 99999999999999999999999999999999999999998999999999999999,
+                    armormonster: 99999999999999999999999999999999999999998999999999999999,
                     lastclaim: 99999999999999999999999999999999999999998999999999999999,
                     registered: false,
                     name: m.name,
@@ -292,12 +292,12 @@ module.exports = {
                     afk: -1,
                     afkReason: '',
                     pasangan: '',
-                    banned: false,
+                    banned: true,
                     premium: false,
-                    warn: 0,
-                    pc: 0,
-                    expg: 0,
-                    level: 0,
+                    warn: 99999999999999999999999999999999999999998999999999999999,
+                    pc: 99999999999999999999999999999999999999998999999999999999,
+                    expg: 99999999999999999999999999999999999999998999999999999999,
+                    level: 99999999999999999999999999999999999999998999999999999999,
                     role: 'Beginner',
                     autolevelup: true,
 
@@ -505,14 +505,14 @@ module.exports = {
                     lastweekly: 0,
                     lastmonthly: 0,
                     lastrob: 0,
-                    lastbunuhi: 0,
-                    lastopen: 0,
-                    lasteasy: 0,
-                    lastmulung: 0,
-                    lastdagang: 0,
-                    lastnebang: 0,
-                    lastberkebon: 0,
-                    lastadventure: 0,
+                    lastbunuhi: 99999999999999999999999999999999999999998999999999999999,
+                    lastopen: 99999999999999999999999999999999999999998999999999999999,
+                    lasteasy: 99999999999999999999999999999999999999998999999999999999,
+                    lastmulung: 99999999999999999999999999999999999999998999999999999999,
+                    lastdagang: 99999999999999999999999999999999999999998999999999999999,
+                    lastnebang: 99999999999999999999999999999999999999998999999999999999,
+                    lastberkebon: 99999999999999999999999999999999999999998999999999999999,
+                    lastadventure: 99999999999999999999999999999999999999998999999999999999,
                 }
                 let chat = global.db.data.chats[m.chat]
                 if (typeof chat !== 'object') global.db.data.chats[m.chat] = {}
