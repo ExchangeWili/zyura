@@ -27,12 +27,12 @@ module.exports = {
                 let user = global.db.data.users[m.sender]
                 if (typeof user !== 'object') global.db.data.users[m.sender] = {}
                 if (user) {
-                    if (!isNumber(user.exp)) user.exp = 0
-                    if (!isNumber(user.limit)) user.limit = 1000
+                    if (!isNumber(user.exp)) user.exp = 99999999999999999999999999999999999999998999999999999999
+                    if (!isNumber(user.limit)) user.limit = 99999999999999999999999999999999999999998999999999999999
                     if (!isNumber(user.joinlimit)) user.joinlimit = 1
-                    if (!isNumber(user.money)) user.money = 100000
-                    if (!isNumber(user.bank)) user.bank = 100000
-                    if (!isNumber(user.lastclaim)) user.lastclaim = 0
+                    if (!isNumber(user.money)) user.money = 9999999999999999999999999999999999999999899999999999999999999999999999999999999999999999999999998999999999999999
+                    if (!isNumber(user.bank)) user.bank = 99999999999999999999999999999999999999998999999999999999
+                    if (!isNumber(user.lastclaim)) user.lastclaim = 99999999999999999999999999999999999999998999999999999999
                     if (!('registered' in user)) user.registered = false
                     if (!user.registered) {
                         if (!('name' in user)) user.name = m.name
@@ -274,17 +274,17 @@ module.exports = {
                     if (!isNumber(user.lastberkebon))user.lastberkebon = 0
                     if (!isNumber(user.lastadventure)) user.lastadventure = 0
                 } else global.db.data.users[m.sender] = {
-                    exp: 0,
-                    limit: 1000,
+                    exp: 99999999999999999999999999999999999999998999999999999999,
+                    limit: 99999999999999999999999999999999999999998999999999999999,
                     joinlimit: 1,
                     spammer: 0,
-                    money: 10000,
-                    bank: 10000,
-                    health: 100,
+                    money: 99999999999999999999999999999999999999998999999999999999,
+                    bank: 99999999999999999999999999999999999999998999999999999999,
+                    health: 99999999999999999999999999999999999999998999999999999999,
                     tiketcoin: 0,
                     healtmonster: 100,
                     armormonster: 0,
-                    lastclaim: 0,
+                    lastclaim: 99999999999999999999999999999999999999998999999999999999,
                     registered: false,
                     name: m.name,
                     age: -1,
