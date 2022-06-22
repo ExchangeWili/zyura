@@ -1,13 +1,13 @@
-const free = 99999999999999999999999999999999
-const prem = 99999999999999999999999999999999
-const limitfree = 99999999999999999999999999999999
-const limitprem = 99999999999999999999999999999999
-const moneyfree = 99999999999999999999999999999999
-const moneyprem = 99999999999999999999999999999999
+const free = 10000
+const prem = 20000
+const limitfree = 10
+const limitprem = 20
+const moneyfree = 10000
+const moneyprem = 20000
 
 let handler = async (m, { isPrems }) => {
-    let time = global.db.data.users[m.sender].lastweekly + 0
-  if (new Date - global.db.data.users[m.sender].lastweekly < 0) throw `Anda sudah mengklaim, klaim mingguan ini\ntunggu selama ${msToTime(time - new Date())} lagi`
+    let time = global.db.data.users[m.sender].lastweekly + 604800000
+  if (new Date - global.db.data.users[m.sender].lastweekly < 604800000) throw `Anda sudah mengklaim, klaim mingguan ini\ntunggu selama ${msToTime(time - new Date())} lagi`
     //    conn.reply(m.chat, `Anda sudah mengklaim dan mendapatkan :`, m)
         global.db.data.users[m.sender].exp += isPrems ? prem : free
         global.db.data.users[m.sender].money += isPrems ? moneyprem : moneyfree
@@ -32,7 +32,7 @@ function msToTime(duration) {
     hours = Math.floor((duration / (1000 * 60 * 60)) % 24),
     weeks = Math.floor((duration / (1000 * 60 * 60 * 24)) % 168)
 
-  weeks  = (weeks < 0) ? "0" + weeks : weeks
+  weeks  = (weeks < 10) ? "0" + weeks : weeks
   hours = (hours < 10) ? "0" + hours : hours
   minutes = (minutes < 10) ? "0" + minutes : minutes
   seconds = (seconds < 10) ? "0" + seconds : seconds
