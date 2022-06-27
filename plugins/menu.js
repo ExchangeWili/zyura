@@ -35,7 +35,6 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-let botwa = fs.readFileSync('./mp3/vidbot.mp4')
 ʜᴀɪ, %ɴᴀᴍᴇ
 ᴡᴀᴋᴛᴜ:   
 %ᴡɪʙ ᴡɪʙ%ᴡɪᴛᴀ ᴡɪᴛᴀ%ᴡɪᴛ ᴡɪᴛ*ʜᴀʀɪ:* %ᴡᴇᴇᴋ*ᴛᴀɴɢɢᴀʟ:* %ᴅᴀᴛᴇ*ᴜᴘᴛɪᴍᴇ:* %ᴜᴘᴛɪᴍᴇ (%ᴍᴜᴘᴛɪᴍᴇ)
@@ -47,7 +46,9 @@ let botwa = fs.readFileSync('./mp3/vidbot.mp4')
   header: ' *%category*',
   body: ' • %cmd %islimit %isPremium',
   footer: '\n',
-╭─❒ 「 TqTo 」 
+  after: `MADE BY
+ ZIO |  Library : *Baileys-MD*.
+ ╭─❒ 「 TqTo 」 
 ├ My God
 ├ My Parents
 ├ Fatih A.
@@ -61,8 +62,6 @@ let botwa = fs.readFileSync('./mp3/vidbot.mp4')
 ├ ZeeoneOfc
 ├ Penyedia Module
 ╰❒ And All Support
-  after: `MADE BY
- ZIO |  Library : *Baileys-MD*.
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
