@@ -50,7 +50,7 @@ Hai, %ucapan %name! 👋
 ├ Fatih A.
 ├ Ferdi
 ├ DikaArdnt
-├ Mhankbarbar
+├ Aine
 ├ Nurutomo
 ├ Rashid
 ├ KingOfBear

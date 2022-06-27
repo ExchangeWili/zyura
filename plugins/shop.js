@@ -3,7 +3,7 @@ const potion = 000
 const Spotion = 0 
 const Bdiamond = 000
 const Sdiamond = 00
-const Bcommon = 100000
+const Bcommon = 00000
 const Scommon = 0
 const Suncommon = 0
 const Buncommon = 00000
@@ -105,7 +105,7 @@ const Bkoinexpg = 00000
 const Beleksirb = 00
 let handler  = async (m, { conn, command, args, usedPrefix, owner }) => {
     const _armor = global.db.data.users[m.sender].armor
-    const armor = (_armor == 0 ? 20000 : '' || _armor == 1 ? 49999 : '' || _armor == 2 ? 99999 : '' || _armor == 3 ? 149999 : '' || _armor == 4 ? 299999 : '')
+    const armor = (_armor == 0 ? 0 : '' || _armor == 1 ? 0 : '' || _armor == 2 ? 0 : '' || _armor == 3 ? 0 : '' || _armor == 4 ? 0 : '' || _armor == 5 ? 0 : '')
     let type = (args[0] || '').toLowerCase()
     let _type = (args[1] || '').toLowerCase()
     let jualbeli = (args[0] || '').toLowerCase()
