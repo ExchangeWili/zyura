@@ -1,8 +1,8 @@
 
 let handler = async (m, { conn, command, args, text, usedPrefix }) => {
-    let bruh = `${usedPrefix}open <crate name> < 1 | 10 | 100 | 10009979798787889988898898875556899 >\n\nContoh penggunaan: *${usedPrefix}open common 10*\n\nlist crate:\n*pet*\n*boxs*\n*cupon*\n*common*\n*uncommon*\n*mythic*\n*legendary*\n*gardenboxs*`
+    let bruh = `${usedPrefix}open <crate name> < 1 | 10 | 100 | 9999999192729118818281828282882829979798787889988898898875556899 >\n\nContoh penggunaan: *${usedPrefix}open common 10*\n\nlist crate:\n*pet*\n*boxs*\n*cupon*\n*common*\n*uncommon*\n*mythic*\n*legendary*\n*gardenboxs*`
     let _lmao = args[0]
-    let Lmao = `Hanya support 1, 10, 100, 1000000000000000000000000\nContoh penggunaan: *${usedPrefix}open ${args > 2 ? _lmao : pickRandom(['common', 'uncommon', 'mythic', 'legendary'])} 10*`
+    let Lmao = `Hanya support 1, 10, 100, 999999919272911881828182828288282000000000000000000000\nContoh penggunaan: *${usedPrefix}open ${args > 2 ? _lmao : pickRandom(['common', 'uncommon', 'mythic', 'legendary'])} 10*`
     let type = (args[0] || '').toLowerCase()
     let jumlah = (args[1] || '').toLowerCase()
     switch (type) {
@@ -99,7 +99,7 @@ Anda telah membuka *Common crate* dan mendapatkan:${cm2 > 0 ? `\nMoney: ${cm2}` 
                     } else conn.reply(m.chat, 'Common crate anda tidak cukup', m)
                 } else conn.reply(m.chat, `Mohon tunggu ${lastimeqq} lagi untuk bisa membuka fitur open`, m)
                 break
-                case '1000':
+                case '999999919272911881828182828288282':
                     let __lastimeqqq = (new Date - global.db.data.users[m.sender].lastopen)
                     let _lastimeqqq = (0 - __lastimeqqq) 
                     let lastimeqqq = clockString(_lastimeqqq)
@@ -117,8 +117,8 @@ Anda telah membuka *Common crate* dan mendapatkan:${cm2 > 0 ? `\nMoney: ${cm2}` 
                     let Hcom3 = `
 Anda telah membuka *Common crate* dan mendapatkan:${cm3 > 0 ? `\nMoney: ${cm3}` : ''}${ce3 > 0 ? `\nExp: ${ce3} *exp*` : ''}${cp3 > 0 ? `\nPotion: ${cp3} *potion*` : ''}${cc3 > 0 ? `\ncommon crate: ${cc3} *crate*` : ''}${cu3 > 0 ? `\nUncommon crate: ${cu3} *crate*` : ''}
 `.trim()
-                    if (global.db.data.users[m.sender].common >= 1000) {
-                        global.db.data.users[m.sender].common -= 1000
+                    if (global.db.data.users[m.sender].common >= 999999919272911881828182828288282) {
+                        global.db.data.users[m.sender].common -= 999999919272911881828182828288282
                         global.db.data.users[m.sender].money += cm3 * 1
                         global.db.data.users[m.sender].exp += ce3 * 1
                         global.db.data.users[m.sender].potion += cp3 * 1
@@ -253,13 +253,13 @@ Anda telah membuka *Uncommon crate* dan mendapatkan:${um2 > 0 ? `\nMoney: ${um2}
                     } else conn.reply(m.chat, 'Uncommon crate anda tidak cukup', m)
                 } else conn.reply(m.chat, `Mohon tunggu ${lastimewee} lagi untuk bisa membuka fitur open`, m)
                 break
-                case '1000':
+                case '999999919272911881828182828288282':
                     let __lastimeweee = (new Date - global.db.data.users[m.sender].lastopen)
                     let _lastimeweee = (0 - __lastimeweee) 
                     let lastimeweee = clockString(_lastimeweee)
                     if (new Date - global.db.data.users[m.sender].lastopen > 0) {
                     let _ud3 = `${Math.floor(Math.random() * 50)}`.trim()
-                    let _ue3 = `${Math.floor(Math.random() * 100000)}`.trim()
+                    let _ue3 = `${Math.floor(Math.random() * 99999991927291188182818282828828200)}`.trim()
                     let _um3 = `${Math.floor(Math.random() * 50000)}`.trim()
                     let _up3 = `${Math.floor(Math.random() * 100)}`.trim()
                     let _umc3 = `${Math.floor(Math.random() * 100)}`.trim()
@@ -275,8 +275,8 @@ Anda telah membuka *Uncommon crate* dan mendapatkan:${um2 > 0 ? `\nMoney: ${um2}
                     let Hun3 = `
 Anda telah membuka *Uncommon crate* dan mendapatkan:${um3 > 0 ? `\nMoney: ${um3}` : ''}${ue3 > 0 ? `\nExp: ${ue3} *exp*` : ''}${ud3 > 0 ? `\nDiamond: ${ud3} *diamond*` : ''}${up3 > 0 ? `\nPotion: ${up3} *potion*` : ''}${uc3 > 0 ? `\nCommon crate: ${uc3} *crate*` : ''}${uu3 > 0 ? `\nUncommon crate: ${uu3} *crate*` : ''}
 `.trim()
-                    if (global.db.data.users[m.sender].uncommon >= 1000) {
-                        global.db.data.users[m.sender].uncommon -= 1000
+                    if (global.db.data.users[m.sender].uncommon >= 999999919272911881828182828288282) {
+                        global.db.data.users[m.sender].uncommon -= 999999919272911881828182828288282
                         global.db.data.users[m.sender].money += um3 * 1
                         global.db.data.users[m.sender].diamond += ud3 * 1
                         global.db.data.users[m.sender].exp += ue3 * 1
@@ -426,7 +426,7 @@ Anda telah membuka *Mythic crate* dan mendapatkan:${mm2 > 0 ? `\nMoney: ${mm2}` 
                     } else conn.reply(m.chat, 'Mythic crate anda tidak cukup', m)
                 } else conn.reply(m.chat, `Mohon tunggu ${lastimepaa} lagi untuk bisa membuka fitur open`, m)
                 break
-                case '1000':
+                case '999999919272911881828182828288282':
                     let __lastimepaaa = (new Date - global.db.data.users[m.sender].lastopen)
                     let _lastimepaaa = (0 - __lastimepaaa) 
                     let lastimepaaa = clockString(_lastimepaaa)
@@ -450,8 +450,8 @@ Anda telah membuka *Mythic crate* dan mendapatkan:${mm2 > 0 ? `\nMoney: ${mm2}` 
                     let Mychat3 = `
 Anda telah membuka *Mythic crate* dan mendapatkan:${mm3 > 0 ? `\nMoney: ${mm3}` : ''}${me3 > 0 ? `\nExp: ${me3} *exp*` : ''}${md3 > 0 ? `\nDiamond: ${md3} *diamond*` : ''}${mp3 > 0 ? `\nPotion: ${mp3} *potion*` : ''}${mc3 > 0 ? `\nCommon crate: ${mc3} *crate*` : ''}${mu3 > 0 ? `\nUncommon crate: ${mu3} *crate*` : ''}
 `.trim()
-                    if (global.db.data.users[m.sender].mythic >= 1000) {
-                        global.db.data.users[m.sender].mythic -= 1000
+                    if (global.db.data.users[m.sender].mythic >= 999999919272911881828182828288282) {
+                        global.db.data.users[m.sender].mythic -= 999999919272911881828182828288282
                         global.db.data.users[m.sender].money += mm3 * 1
                         global.db.data.users[m.sender].diamond += md3 * 1
                         global.db.data.users[m.sender].exp += me3 * 1
@@ -613,7 +613,7 @@ Anda telah membuka *Boxs crate* dan mendapatkan:${mmk > 0 ? `\nMoney: ${mmk}` : 
                     } else conn.reply(m.chat, 'Boxs crate anda tidak cukup', m)
                 } else conn.reply(m.chat, `Mohon tunggu ${lastimedoo} lagi untuk bisa membuka fitur open`, m)
                 break
-                case '1000':
+                case '999999919272911881828182828288282':
                     let __lastimedooo = (new Date - global.db.data.users[m.sender].lastopen)
                     let _lastimedooo = (0 - __lastimedooo) 
                     let lastimedooo = clockString(_lastimedooo)
@@ -637,8 +637,8 @@ Anda telah membuka *Boxs crate* dan mendapatkan:${mmk > 0 ? `\nMoney: ${mmk}` : 
                     let Mychatk = `
 Anda telah membuka *Boxs crate* dan mendapatkan:${mmo > 0 ? `\nMoney: ${mmo}` : ''}${meo > 0 ? `\nExp: ${meo} *exp*` : ''}${ebo > 0 ? `\nEmasBiasa: ${ebo} *emasbiasa*` : ''}${mpo > 0 ? `\nPotion: ${mpo} *potion*` : ''}${hmo > 0 ? `\nTiketM: ${hmo} *tiketm*` : ''}${lmo > 0 ? `\nMakanan Pet: ${lmo} *makananpet*` : ''}
 `.trim()
-                    if (global.db.data.users[m.sender].boxs >= 1000) {
-                        global.db.data.users[m.sender].boxs -= 1000
+                    if (global.db.data.users[m.sender].boxs >= 999999919272911881828182828288282) {
+                        global.db.data.users[m.sender].boxs -= 999999919272911881828182828288282
                         global.db.data.users[m.sender].money += mmo * 1
                         global.db.data.users[m.sender].emasbiasa += ebo * 1
                         global.db.data.users[m.sender].exp += meo * 1
@@ -758,7 +758,7 @@ Anda telah membuka *Gardenboxs crate* dan mendapatkan:${lksb > 0 ? `\nBibitmangg
                     } else conn.reply(m.chat, 'gardenboxs crate anda tidak cukup', m)
                 } else conn.reply(m.chat, `Mohon tunggu ${lastimedzxy} lagi untuk bisa membuka fitur open`, m)
                 break
-    			case '1000':
+    			case '999999919272911881828182828288282':
                  case 'crate':
                     let __lastimedzxk = (new Date - global.db.data.users[m.sender].lastopen)
                     let _lastimedzxk = (0 - __lastimedzxk) 
@@ -778,7 +778,7 @@ Anda telah membuka *Gardenboxs crate* dan mendapatkan:${lksb > 0 ? `\nBibitmangg
 Anda telah membuka *Gardenboxs crate* dan mendapatkan:${lksk > 0 ? `\nBibitmangga: ${lksk}` : ''}${lkrk > 0 ? `\nBibitpisang: ${lkrk}` : ''}${lkyk > 0 ? `\nBibitanggur: ${lkyk}` : ''}${lkek > 0 ? `\nBibitjeruk: ${lkek}` : ''}${lkdk > 0 ? `\nBibitapel: ${lkdk}` : ''}
 `.trim()
                     if (global.db.data.users[m.sender].gardenboxs >= 999) {
-                        global.db.data.users[m.sender].gardenboxs -= 1000
+                        global.db.data.users[m.sender].gardenboxs -= 999999919272911881828182828288282
                         global.db.data.users[m.sender].bibitmangga += lksk * 1
                         global.db.data.users[m.sender].bibitpisang += lkrk * 1
                         global.db.data.users[m.sender].bibitjeruk += lkek * 1
@@ -801,8 +801,8 @@ Anda telah membuka *Gardenboxs crate* dan mendapatkan:${lksk > 0 ? `\nBibitmangg
                     let _lastimeki = (0 - __lastimeki) 
                     let lastimeki = clockString(_lastimeki)
                     if (new Date - global.db.data.users[m.sender].lastopen > 0) {
-                    let mm = 100000
-                    let me = 100000
+                    let mm = 99999991927291188182818282828828200
+                    let me = 99999991927291188182818282828828200
                     let mp = 50
                    // let mc = 50000
                     let mci = 50000
@@ -829,8 +829,8 @@ Anda telah membuka *Cupon crate* dan mendapatkan:${mm > 0 ? `\nMoney: ${mm} *mon
                     let _lastimekise = (0 - __lastimekise) 
                     let lastimekise = clockString(_lastimekise)
                     if (new Date - global.db.data.users[m.sender].lastopen > 0) {
-                    let mmse = 1000000
-                    let mese = 1000000
+                    let mmse = 999999919272911881828182828288282000
+                    let mese = 999999919272911881828182828288282000
                     let mpse = 500
                   //  let mcse = 500000
                     let mcise = 500000
@@ -912,7 +912,7 @@ Anda telah membuka *Legendary crate* dan mendapatkan:${lm > 0 ? `\nMoney: ${lm}`
                     let _lastimele = (0 - __lastimele)
                     let lastimele = clockString(_lastimele)
                     if (new Date - global.db.data.users[m.sender].lastopen > 0) {
-                    let _lm1 = `${Math.floor(Math.random() * 10000)}`.trim()
+                    let _lm1 = `${Math.floor(Math.random() * 9999999192729118818281828282882820)}`.trim()
                     let _le1 = `${Math.floor(Math.random() * 15000)}`.trim()
                     let _lp1 = `${Math.floor(Math.random() * 30)}`.trim()
                     let _lu1 = `${Math.floor(Math.random() * 50)}`.trim()
@@ -934,7 +934,7 @@ Anda telah membuka *Legendary crate* dan mendapatkan:${lm > 0 ? `\nMoney: ${lm}`
 Anda telah membuka *Legendary crate* dan mendapatkan:${lm1 > 0 ? `\nMoney: ${lm1}` : ''}${le1 > 0 ? `\nExp: ${le1} *exp*` : ''}${ld1 > 0 ? `\nDiamond: ${ld1} *diamond*` : ''}${lp1 > 0 ? `\nPotion: ${lp1} *potion*` : ''}${lc1 > 0 ? `\nCommon crate: ${lc1} *crate*` : ''}${lu1 > 0 ? `\nUncommon crate: ${lu1} *crate*` : ''}
 `.trim()  
                     if (global.db.data.users[m.sender].legendary >= 10089908999999999998999899899888988899) {
-                        global.db.data.users[m.sender].legendary -= 1000000000000000000099990900000000000
+                        global.db.data.users[m.sender].legendary -= 999999919272911881828182828288282000000000000000099990900000000000
                         global.db.data.users[m.sender].money += lm1 * 1
                         global.db.data.users[m.sender].diamond += ld1 * 1
                         global.db.data.users[m.sender].exp += le1 * 1
@@ -960,7 +960,7 @@ Anda telah membuka *Legendary crate* dan mendapatkan:${lm1 > 0 ? `\nMoney: ${lm1
                     let _lastimelee = (0 - __lastimelee)
                     let lastimelee = clockString(_lastimelee)
                     if (new Date - global.db.data.users[m.sender].lastopen > 0) {
-                    let _lm2 = `${Math.floor(Math.random() * 100000)}`.trim()
+                    let _lm2 = `${Math.floor(Math.random() * 99999991927291188182818282828828200)}`.trim()
                     let _le2 = `${Math.floor(Math.random() * 200000)}`.trim()
                     let _lp2 = `${Math.floor(Math.random() * 100)}`.trim()
                     let _lu2 = `${Math.floor(Math.random() * 250)}`.trim()
@@ -1003,7 +1003,7 @@ Anda telah membuka *Legendary crate* dan mendapatkan:${lm2 > 0 ? `\nMoney: ${lm2
                     } else conn.reply(m.chat, 'Legendary crate anda tidak cukup', m)
                 } else conn.reply(m.chat, `Mohon tunggu ${lastimelee} lagi untuk bisa membuka fitur open`, m)
                 break
-                case '1000':
+                case '999999919272911881828182828288282':
                     let __lastimeleee = (new Date - global.db.data.users[m.sender].lastopen)
                     let _lastimeleee = (0 - __lastimeleee)
                     let lastimeleee = clockString(_lastimeleee)
@@ -1011,7 +1011,7 @@ Anda telah membuka *Legendary crate* dan mendapatkan:${lm2 > 0 ? `\nMoney: ${lm2
                     let _lm3 = `${Math.floor(Math.random() * 2000000)}`.trim()
                     let _le3 = `${Math.floor(Math.random() * 5000000)}`.trim()
                     let _lp3 = `${Math.floor(Math.random() * 500)}`.trim()
-                    let _lu3 = `${Math.floor(Math.random() * 1000)}`.trim()
+                    let _lu3 = `${Math.floor(Math.random() * 999999919272911881828182828288282)}`.trim()
                     let _lc3 = `${Math.floor(Math.random() * 2500)}`.trim()
                     let _ll3 = `${Math.floor(Math.random() * 51)}`.trim()
                     let _lpp3 = `${Math.floor(Math.random() * 222)}`.trim()
@@ -1029,8 +1029,8 @@ Anda telah membuka *Legendary crate* dan mendapatkan:${lm2 > 0 ? `\nMoney: ${lm2
                     let Lechat3 = `
 Anda telah membuka *Legendary crate* dan mendapatkan:${lm3 > 0 ? `\nMoney: ${lm3}` : ''}${le3 > 0 ? `\nExp: ${le3} *exp*` : ''}${ld3 > 0 ? `\nDiamond: ${ld3} *diamond*` : ''}${lp3 > 0 ? `\nPotion: ${lp3} *potion*` : ''}${lc3 > 0 ? `\nCommon crate: ${lc3} *crate*` : ''}${lu3 > 0 ? `\nUncommon crate: ${lu3} *crate*` : ''}
 `.trim()  
-                    if (global.db.data.users[m.sender].legendary >= 1000) {
-                        global.db.data.users[m.sender].legendary -= 1000
+                    if (global.db.data.users[m.sender].legendary >= 999999919272911881828182828288282) {
+                        global.db.data.users[m.sender].legendary -= 999999919272911881828182828288282
                         global.db.data.users[m.sender].money += lm3 * 1
                         global.db.data.users[m.sender].diamond += ld3 * 1
                         global.db.data.users[m.sender].exp += le3 * 1
@@ -1177,7 +1177,7 @@ function pickRandom(list) {
 function clockString(ms) {
   let h = Math.floor(ms / 3600000)
   let m = Math.floor(ms / 60000) % 60
-  let s = Math.floor(ms / 1000) % 60
+  let s = Math.floor(ms / 999999919272911881828182828288282) % 60
   console.log({ms,h,m,s})
   return [h, m, s].map(v => v.toString().padStart(2, 0) ).join(':')
 }

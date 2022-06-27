@@ -35,38 +35,34 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-Hai, %ucapan %name! 👋
-  
-*Waktu:* 
-%wib WIB
-%wita WITA
-%wit WIT
-*Hari:* %week
-*Tanggal:* %date
-*Uptime:* %uptime (%muptime)
+let botwa = fs.readFileSync('./mp3/vidbot.mp4')
+ʜᴀɪ, %ɴᴀᴍᴇ
+ᴡᴀᴋᴛᴜ:   
+%ᴡɪʙ ᴡɪʙ%ᴡɪᴛᴀ ᴡɪᴛᴀ%ᴡɪᴛ ᴡɪᴛ*ʜᴀʀɪ:* %ᴡᴇᴇᴋ*ᴛᴀɴɢɢᴀʟ:* %ᴅᴀᴛᴇ*ᴜᴘᴛɪᴍᴇ:* %ᴜᴘᴛɪᴍᴇ (%ᴍᴜᴘᴛɪᴍᴇ)
+>>*Limit:* %ʟɪᴍɪᴛ
+>>*Level:* %ʟᴇᴠᴇʟ
+>>*XP:* %ᴇxᴘ
+>>*Money:* %ᴍᴏɴᴇʏ
+%readmore`.trimStart(),
+  header: ' *%category*',
+  body: ' • %cmd %islimit %isPremium',
+  footer: '\n',
 ╭─❒ 「 TqTo 」 
 ├ My God
 ├ My Parents
 ├ Fatih A.
 ├ Ferdi
 ├ DikaArdnt
-├ Aine
+├ Kyura/Zio
 ├ Nurutomo
 ├ Rashid
 ├ KingOfBear
-├ Kyura
+├ Aine
 ├ ZeeoneOfc
 ├ Penyedia Module
 ╰❒ And All Support
-*Limit:* %limit
-*Level:* %level
-*XP:* %exp
-%readmore`.trimStart(),
-  header: ' *%category*',
-  body: ' • %cmd %islimit %isPremium',
-  footer: '\n',
-  after: `*Made By *
- ZIO | TAMPAN
+  after: `MADE BY
+ ZIO |  Library : *Baileys-MD*.
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
@@ -172,7 +168,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     conn.sendHydrated(m.chat, text.trim(), 'Ⓟ premium | Ⓛ limit', null, '-', 'Website', '', '', [
       ['Donate', '/donasi'],
       ['Sewa Bot', '/sewa'],
-      ['OwnerTampan', '/ownertampan']
+      ['Owner', '/owner']
     ], m)
     /*let url = `https://telegra.ph/file/ab1df70dfd5c2bac64da1.jpg`.trim()
     let res = await fetch(url)
