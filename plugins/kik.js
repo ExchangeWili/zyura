@@ -3,7 +3,7 @@ let fs = require('fs')
  let ownerGroup = m.chat.split`-`[0] + '@s.whatsapp.net'
   aki = m.quoted ? [m.quoted.sender] : m.mentionedJid
   let users = aki.filter(u => !(u == ownerGroup || u.includes(conn.user.jid)))
-  wayy = '_*Asik Dapet Jatah Kick*_'
+  wayy = '_*Mampus Di Kick Admin*_'
   for (let i of users) {
   wayy += ` @${i.split('@')[0]}`
   }
@@ -13,14 +13,14 @@ let fs = require('fs')
 handler.help = ['kick'].map(v => v + ' @user')
 handler.tags = ['group']
 handler.command = /^(kick|\-)$/i
-handler.owner = false
+handler.owner = true
 handler.mods = false
 handler.premium = false
 handler.group = true
 handler.private = false
 
-handler.admin = true
-handler.botAdmin = true
+handler.admin = false 
+handler.botAdmin = false
 
 handler.fail = null
 handler.limit = false

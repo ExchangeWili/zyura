@@ -34,7 +34,7 @@ const roles = {
   'The Commander Super Legends Shadow Hero': 70,
   'The Commander Super Legends Shadow Hero': 80,
   'The Strongest Legend': 90,
-  'The Hero Of The Legend\'s Strongest': 100
+  'The Hero Of The Legend\'s Strongest': 0
 }
 
 module.exports = {

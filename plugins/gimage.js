@@ -13,6 +13,7 @@ let handler  = async (m, { conn, args, text }) => {
 ${text}
 ➸ *width*: ${width}
 ➸ *height*: ${height}
+JANGAN NYARI BOKEP KONTOL 
 `.trim(), m)
 }
 handler.help = ['gimage <search>']
