@@ -2,7 +2,7 @@ const { MessageType } = require('@adiwajshing/baileys')
 let handler = async (m, { conn, usedPrefix, owner }) => { 
     try { 
         let __timers = (new Date - global.db.data.users[m.sender].lastadventure)
-        let _timers = (3600000 - __timers) 
+        let _timers = (0 - __timers) 
         let timers = clockString(_timers)
         if (global.db.data.users[m.sender].health > 79) {
             if (new Date - global.db.data.users[m.sender].lastadventure > 3600000) {

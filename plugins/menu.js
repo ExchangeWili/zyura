@@ -44,7 +44,20 @@ Hai, %ucapan %name! 👋
 *Hari:* %week
 *Tanggal:* %date
 *Uptime:* %uptime (%muptime)
-
+╭─❒ 「 TqTo 」 
+├ My God
+├ My Parents
+├ Fatih A.
+├ Ferdi
+├ DikaArdnt
+├ Mhankbarbar
+├ Nurutomo
+├ Rashid
+├ KingOfBear
+├ Kyura
+├ ZeeoneOfc
+├ Penyedia Module
+╰❒ And All Support
 *Limit:* %limit
 *Level:* %level
 *XP:* %exp
@@ -52,9 +65,8 @@ Hai, %ucapan %name! 👋
   header: ' *%category*',
   body: ' • %cmd %islimit %isPremium',
   footer: '\n',
-  after: `*Made by ♡*
-*%npmname* | %version
-${'```%npmdesc```'}
+  after: `*Made By *
+ ZIO | TAMPAN
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
@@ -157,10 +169,10 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    conn.sendHydrated(m.chat, text.trim(), 'Ⓟ premium | Ⓛ limit', null, 'https://aiinne.github.io/', 'Website', '', '', [
+    conn.sendHydrated(m.chat, text.trim(), 'Ⓟ premium | Ⓛ limit', null, '-', 'Website', '', '', [
       ['Donate', '/donasi'],
       ['Sewa Bot', '/sewa'],
-      ['Owner', '/owner']
+      ['OwnerTampan', '/ownertampan']
     ], m)
     /*let url = `https://telegra.ph/file/ab1df70dfd5c2bac64da1.jpg`.trim()
     let res = await fetch(url)
@@ -222,17 +234,17 @@ function clockString(ms) {
 
 function ucapan() {
         const hour_now = moment.tz('Asia/Jakarta').format('HH')
-        var ucapanWaktu = 'Pagi kak'
+        var ucapanWaktu = 'Pagi Dek'
         if (hour_now >= '03' && hour_now <= '10') {
-          ucapanWaktu = 'Pagi kak'
+          ucapanWaktu = 'Pagi Dek'
         } else if (hour_now >= '10' && hour_now <= '15') {
-          ucapanWaktu = 'Siang kak'
+          ucapanWaktu = 'Siang Dek'
         } else if (hour_now >= '15' && hour_now <= '17') {
-          ucapanWaktu = 'Sore kak'
+          ucapanWaktu = 'Sore Dek'
         } else if (hour_now >= '17' && hour_now <= '18') {
-          ucapanWaktu = 'Selamat Petang kak'
+          ucapanWaktu = 'Selamat Petang Dek'
         } else if (hour_now >= '18' && hour_now <= '23') {
-          ucapanWaktu = 'Malam kak'
+          ucapanWaktu = 'Malam Dek'
         } else {
           ucapanWaktu = 'Selamat Malam!'
         }	

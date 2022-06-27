@@ -1,8 +1,8 @@
 
 let handler = async (m, { conn, command, args, text, usedPrefix }) => {
-    let bruh = `${usedPrefix}open <crate name> < 1 | 10 | 100 | 1000 >\n\nContoh penggunaan: *${usedPrefix}open common 10*\n\nlist crate:\n*pet*\n*boxs*\n*cupon*\n*common*\n*uncommon*\n*mythic*\n*legendary*\n*gardenboxs*`
+    let bruh = `${usedPrefix}open <crate name> < 1 | 10 | 100 | 10009979798787889988898898875556899 >\n\nContoh penggunaan: *${usedPrefix}open common 10*\n\nlist crate:\n*pet*\n*boxs*\n*cupon*\n*common*\n*uncommon*\n*mythic*\n*legendary*\n*gardenboxs*`
     let _lmao = args[0]
-    let Lmao = `Hanya support 1, 10, 100, 1000\nContoh penggunaan: *${usedPrefix}open ${args > 2 ? _lmao : pickRandom(['common', 'uncommon', 'mythic', 'legendary'])} 10*`
+    let Lmao = `Hanya support 1, 10, 100, 1000000000000000000000000\nContoh penggunaan: *${usedPrefix}open ${args > 2 ? _lmao : pickRandom(['common', 'uncommon', 'mythic', 'legendary'])} 10*`
     let type = (args[0] || '').toLowerCase()
     let jumlah = (args[1] || '').toLowerCase()
     switch (type) {
@@ -11,9 +11,9 @@ let handler = async (m, { conn, command, args, text, usedPrefix }) => {
                 case '1':
                 case 'crate':
                     let __lastime = (new Date - global.db.data.users[m.sender].lastopen)
-                    let _lastime = (30000 - __lastime) 
+                    let _lastime = (0 - __lastime) 
                     let lastime = clockString(_lastime)
-                    if (new Date - global.db.data.users[m.sender].lastopen > 30000) {
+                    if (new Date - global.db.data.users[m.sender].lastopen > 0) {
                     let _cm = `${Math.floor(Math.random() * 50)}`.trim()
                     let _cc = `${Math.floor(Math.random() * 2)}`.trim()
                     let _cp = `${Math.floor(Math.random() * 1)}`.trim()
@@ -41,9 +41,9 @@ Anda telah membuka *Common crate* dan mendapatkan:${cm > 0 ? `\nMoney: ${cm}` : 
                 break
                 case '10':
                     let __lastimeq = (new Date - global.db.data.users[m.sender].lastopen)
-                    let _lastimeq = (30000 - __lastimeq) 
+                    let _lastimeq = (0 - __lastimeq) 
                     let lastimeq = clockString(_lastimeq)
-                    if (new Date - global.db.data.users[m.sender].lastopen > 30000) {
+                    if (new Date - global.db.data.users[m.sender].lastopen > 0) {
                     let _cm1 = `${Math.floor(Math.random() * 500)}`.trim()
                     let _cc1 = `${Math.floor(Math.random() * 5)}`.trim()
                     let _cp1 = `${Math.floor(Math.random() * 3)}`.trim()
@@ -71,9 +71,9 @@ Anda telah membuka *Common crate* dan mendapatkan:${cm1 > 0 ? `\nMoney: ${cm1}` 
                 break
                 case '100':
                     let __lastimeqq = (new Date - global.db.data.users[m.sender].lastopen)
-                    let _lastimeqq = (30000 - __lastimeqq) 
+                    let _lastimeqq = (0 - __lastimeqq) 
                     let lastimeqq = clockString(_lastimeqq)
-                    if (new Date - global.db.data.users[m.sender].lastopen > 30000) {
+                    if (new Date - global.db.data.users[m.sender].lastopen > 0) {
                     let _cm2 = `${Math.floor(Math.random() * 5000)}`.trim()
                     let _cc2 = `${Math.floor(Math.random() * 50)}`.trim()
                     let _cp2 = `${Math.floor(Math.random() * 20)}`.trim()
@@ -101,9 +101,9 @@ Anda telah membuka *Common crate* dan mendapatkan:${cm2 > 0 ? `\nMoney: ${cm2}` 
                 break
                 case '1000':
                     let __lastimeqqq = (new Date - global.db.data.users[m.sender].lastopen)
-                    let _lastimeqqq = (30000 - __lastimeqqq) 
+                    let _lastimeqqq = (0 - __lastimeqqq) 
                     let lastimeqqq = clockString(_lastimeqqq)
-                    if (new Date - global.db.data.users[m.sender].lastopen > 30000) {
+                    if (new Date - global.db.data.users[m.sender].lastopen > 0) {
                     let _cm3 = `${Math.floor(Math.random() * 50000)}`.trim()
                     let _cc3 = `${Math.floor(Math.random() * 350)}`.trim()
                     let _cp3 = `${Math.floor(Math.random() * 100)}`.trim()
@@ -138,9 +138,9 @@ Anda telah membuka *Common crate* dan mendapatkan:${cm3 > 0 ? `\nMoney: ${cm3}` 
                 case '1':
                 case 'crate':
                     let __lastimew = (new Date - global.db.data.users[m.sender].lastopen)
-                    let _lastimew = (30000 - __lastimew) 
+                    let _lastimew = (0 - __lastimew) 
                     let lastimew = clockString(_lastimew)
-                    if (new Date - global.db.data.users[m.sender].lastopen > 30000) {
+                    if (new Date - global.db.data.users[m.sender].lastopen > 0) {
                     let _ud = `${Math.floor(Math.random() * 2)}`.trim()
                     let _ue = `${Math.floor(Math.random() * 100)}`.trim()
                     let _um = `${Math.floor(Math.random() * 150)}`.trim()
@@ -177,9 +177,9 @@ Anda telah membuka *Uncommon crate* dan mendapatkan:${um > 0 ? `\nMoney: ${um}` 
                 break
                 case '10':
                     let __lastimewe = (new Date - global.db.data.users[m.sender].lastopen)
-                    let _lastimewe = (30000 - __lastimewe) 
+                    let _lastimewe = (0 - __lastimewe) 
                     let lastimewe = clockString(_lastimewe)
-                    if (new Date - global.db.data.users[m.sender].lastopen > 30000) {
+                    if (new Date - global.db.data.users[m.sender].lastopen > 0) {
                     let _ud1 = `${Math.floor(Math.random() * 5)}`.trim()
                     let _ue1 = `${Math.floor(Math.random() * 750)}`.trim()
                     let _um1 = `${Math.floor(Math.random() * 400)}`.trim()
@@ -216,9 +216,9 @@ Anda telah membuka *Uncommon crate* dan mendapatkan:${um1 > 0 ? `\nMoney: ${um1}
                 break
                 case '100':
                     let __lastimewee = (new Date - global.db.data.users[m.sender].lastopen)
-                    let _lastimewee = (30000 - __lastimewee) 
+                    let _lastimewee = (0 - __lastimewee) 
                     let lastimewee = clockString(_lastimewee)
-                    if (new Date - global.db.data.users[m.sender].lastopen > 30000) {
+                    if (new Date - global.db.data.users[m.sender].lastopen > 0) {
                     let _ud2 = `${Math.floor(Math.random() * 20)}`.trim()
                     let _ue2 = `${Math.floor(Math.random() * 8000)}`.trim()
                     let _um2 = `${Math.floor(Math.random() * 5000)}`.trim()
@@ -255,9 +255,9 @@ Anda telah membuka *Uncommon crate* dan mendapatkan:${um2 > 0 ? `\nMoney: ${um2}
                 break
                 case '1000':
                     let __lastimeweee = (new Date - global.db.data.users[m.sender].lastopen)
-                    let _lastimeweee = (30000 - __lastimeweee) 
+                    let _lastimeweee = (0 - __lastimeweee) 
                     let lastimeweee = clockString(_lastimeweee)
-                    if (new Date - global.db.data.users[m.sender].lastopen > 30000) {
+                    if (new Date - global.db.data.users[m.sender].lastopen > 0) {
                     let _ud3 = `${Math.floor(Math.random() * 50)}`.trim()
                     let _ue3 = `${Math.floor(Math.random() * 100000)}`.trim()
                     let _um3 = `${Math.floor(Math.random() * 50000)}`.trim()
@@ -301,9 +301,9 @@ Anda telah membuka *Uncommon crate* dan mendapatkan:${um3 > 0 ? `\nMoney: ${um3}
                 case '1':
                 case 'crate':
                     let __lastimep = (new Date - global.db.data.users[m.sender].lastopen)
-                    let _lastimep = (30000 - __lastimep) 
+                    let _lastimep = (0 - __lastimep) 
                     let lastimep = clockString(_lastimep)
-                    if (new Date - global.db.data.users[m.sender].lastopen > 30000) {
+                    if (new Date - global.db.data.users[m.sender].lastopen > 0) {
                     let _mm = `${Math.floor(Math.random() * 200)}`.trim()
                     let _mmm = `${pickRandom(['0', '0', '1', '0'])}`.trim()
                     let _me = `${Math.floor(Math.random() * 250)}`.trim()
@@ -346,9 +346,9 @@ Anda telah membuka *Mythic crate* dan mendapatkan:${mm > 0 ? `\nMoney: ${mm}` : 
                 break
                 case '10':
                     let __lastimepa = (new Date - global.db.data.users[m.sender].lastopen)
-                    let _lastimepa = (30000 - __lastimepa) 
+                    let _lastimepa = (0 - __lastimepa) 
                     let lastimepa = clockString(_lastimepa)
-                    if (new Date - global.db.data.users[m.sender].lastopen > 30000) {
+                    if (new Date - global.db.data.users[m.sender].lastopen > 0) {
                     let _mm1 = `${Math.floor(Math.random() * 2000)}`.trim()
                     let _mmm1 = `${Math.floor(Math.random() * 4)}`.trim()
                     let _me1 = `${Math.floor(Math.random() * 3000)}`.trim()
@@ -391,12 +391,12 @@ Anda telah membuka *Mythic crate* dan mendapatkan:${mm1 > 0 ? `\nMoney: ${mm1}` 
                 break
                 case '100':
                     let __lastimepaa = (new Date - global.db.data.users[m.sender].lastopen)
-                    let _lastimepaa = (30000 - __lastimepaa) 
+                    let _lastimepaa = (0 - __lastimepaa) 
                     let lastimepaa = clockString(_lastimepaa)
-                    if (new Date - global.db.data.users[m.sender].lastopen > 30000) {
+                    if (new Date - global.db.data.users[m.sender].lastopen > 0) {
                     let _mm2 = `${Math.floor(Math.random() * 25000)}`.trim()
                     let _mmm2 = `${Math.floor(Math.random() * 10)}`.trim()
-                    let _me2 = `${Math.floor(Math.random() * 30000)}`.trim()
+                    let _me2 = `${Math.floor(Math.random() * 0)}`.trim()
                     let _mp2 = `${Math.floor(Math.random() * 50)}`.trim()
                     let _mu2 = `${Math.floor(Math.random() * 80)}`.trim()
                     let _mc2 = `${Math.floor(Math.random() * 150)}`.trim()
@@ -428,9 +428,9 @@ Anda telah membuka *Mythic crate* dan mendapatkan:${mm2 > 0 ? `\nMoney: ${mm2}` 
                 break
                 case '1000':
                     let __lastimepaaa = (new Date - global.db.data.users[m.sender].lastopen)
-                    let _lastimepaaa = (30000 - __lastimepaaa) 
+                    let _lastimepaaa = (0 - __lastimepaaa) 
                     let lastimepaaa = clockString(_lastimepaaa)
-                    if (new Date - global.db.data.users[m.sender].lastopen > 30000) {
+                    if (new Date - global.db.data.users[m.sender].lastopen > 0) {
                     let _mm3 = `${Math.floor(Math.random() * 500000)}`.trim()
                     let _mmm3 = `${Math.floor(Math.random() * 50)}`.trim()
                     let _me3 = `${Math.floor(Math.random() * 750000)}`.trim()
@@ -480,9 +480,9 @@ Anda telah membuka *Mythic crate* dan mendapatkan:${mm3 > 0 ? `\nMoney: ${mm3}` 
                 case '1':
                 case 'crate':
                     let __lastimed = (new Date - global.db.data.users[m.sender].lastopen)
-                    let _lastimed = (30000 - __lastimed) 
+                    let _lastimed = (0 - __lastimed) 
                     let lastimed = clockString(_lastimed)
-                    if (new Date - global.db.data.users[m.sender].lastopen > 30000) {
+                    if (new Date - global.db.data.users[m.sender].lastopen > 0) {
                     let _mmz = `${Math.floor(Math.random() * 500)}`.trim()
                     let _bbbz = `${pickRandom(['0', '0', '1', '0'])}`.trim()
                     let _mez = `${Math.floor(Math.random() * 250)}`.trim()
@@ -525,9 +525,9 @@ Anda telah membuka *Boxs crate* dan mendapatkan:${mmz > 0 ? `\nMoney: ${mmz}` : 
                 break
                 case '10': 
                     let __lastimedo = (new Date - global.db.data.users[m.sender].lastopen)
-                    let _lastimedo = (30000 - __lastimedo) 
+                    let _lastimedo = (0 - __lastimedo) 
                     let lastimedo = clockString(_lastimedo)
-                    if (new Date - global.db.data.users[m.sender].lastopen > 30000) {
+                    if (new Date - global.db.data.users[m.sender].lastopen > 0) {
                     let _mme= `${Math.floor(Math.random() * 5000)}`.trim()
                     let _bbbe = `${Math.floor(Math.random() * 4)}`.trim()
                     let _mee = `${Math.floor(Math.random() * 2500)}`.trim()
@@ -570,9 +570,9 @@ Anda telah membuka *Boxs crate* dan mendapatkan:${mme > 0 ? `\nMoney: ${mme}` : 
                 break
                 case '100':
                     let __lastimedoo = (new Date - global.db.data.users[m.sender].lastopen)
-                    let _lastimedoo = (30000 - __lastimedoo) 
+                    let _lastimedoo = (0 - __lastimedoo) 
                     let lastimedoo = clockString(_lastimedoo)
-                    if (new Date - global.db.data.users[m.sender].lastopen > 30000) {
+                    if (new Date - global.db.data.users[m.sender].lastopen > 0) {
                     let _mmk = `${Math.floor(Math.random() * 50000)}`.trim()
                     let _bbbk = `${Math.floor(Math.random() * 10)}`.trim()
                     let _mek = `${Math.floor(Math.random() * 40000)}`.trim()
@@ -615,9 +615,9 @@ Anda telah membuka *Boxs crate* dan mendapatkan:${mmk > 0 ? `\nMoney: ${mmk}` : 
                 break
                 case '1000':
                     let __lastimedooo = (new Date - global.db.data.users[m.sender].lastopen)
-                    let _lastimedooo = (30000 - __lastimedooo) 
+                    let _lastimedooo = (0 - __lastimedooo) 
                     let lastimedooo = clockString(_lastimedooo)
-                    if (new Date - global.db.data.users[m.sender].lastopen > 30000) {
+                    if (new Date - global.db.data.users[m.sender].lastopen > 0) {
                     let _mmo = `${Math.floor(Math.random() * 500000)}`.trim()
                     let _bbbo= `${Math.floor(Math.random() * 50)}`.trim()
                     let _meo = `${Math.floor(Math.random() * 400000)}`.trim()
@@ -668,9 +668,9 @@ Anda telah membuka *Boxs crate* dan mendapatkan:${mmo > 0 ? `\nMoney: ${mmo}` : 
                 case '1':
                 case 'crate':
                     let __lastimedz = (new Date - global.db.data.users[m.sender].lastopen)
-                    let _lastimedz = (30000 - __lastimedz) 
+                    let _lastimedz = (0 - __lastimedz) 
                     let lastimedz = clockString(_lastimedz)
-                    if (new Date - global.db.data.users[m.sender].lastopen > 30000) {
+                    if (new Date - global.db.data.users[m.sender].lastopen > 0) {
                     let _alp = `${Math.floor(Math.random() * 300)}`.trim()
                     let _blp = `${Math.floor(Math.random() * 300)}`.trim()
                     let _clp = `${Math.floor(Math.random() * 300)}`.trim()
@@ -699,9 +699,9 @@ Anda telah membuka *Gardenboxs crate* dan mendapatkan:${alp > 0 ? `\nBibitmangga
                 case '10':
                 case 'crate':
                     let __lastimedzx = (new Date - global.db.data.users[m.sender].lastopen)
-                    let _lastimedzx = (30000 - __lastimedzx) 
+                    let _lastimedzx = (0 - __lastimedzx) 
                     let lastimedzx = clockString(_lastimedzx)
-                    if (new Date - global.db.data.users[m.sender].lastopen > 30000) {
+                    if (new Date - global.db.data.users[m.sender].lastopen > 0) {
                     let _lks = `${Math.floor(Math.random() * 3000)}`.trim()
                     let _lkd = `${Math.floor(Math.random() * 3000)}`.trim()
                     let _lke = `${Math.floor(Math.random() * 3000)}`.trim()
@@ -730,9 +730,9 @@ Anda telah membuka *Gardenboxs crate* dan mendapatkan:${lks > 0 ? `\nBibitmangga
             	case '100':
                   case 'crate':
                     let __lastimedzxy = (new Date - global.db.data.users[m.sender].lastopen)
-                    let _lastimedzxy = (30000 - __lastimedzxy) 
+                    let _lastimedzxy = (0 - __lastimedzxy) 
                     let lastimedzxy = clockString(_lastimedzxy)
-                    if (new Date - global.db.data.users[m.sender].lastopen > 30000) {
+                    if (new Date - global.db.data.users[m.sender].lastopen > 0) {
                     let _lksb = `${Math.floor(Math.random() * 3000)}`.trim()
                     let _lkdb = `${Math.floor(Math.random() * 3000)}`.trim()
                     let _lkeb = `${Math.floor(Math.random() * 3000)}`.trim()
@@ -761,9 +761,9 @@ Anda telah membuka *Gardenboxs crate* dan mendapatkan:${lksb > 0 ? `\nBibitmangg
     			case '1000':
                  case 'crate':
                     let __lastimedzxk = (new Date - global.db.data.users[m.sender].lastopen)
-                    let _lastimedzxk = (30000 - __lastimedzxk) 
+                    let _lastimedzxk = (0 - __lastimedzxk) 
                     let lastimedzxk = clockString(_lastimedzxk)
-                    if (new Date - global.db.data.users[m.sender].lastopen > 30000) {
+                    if (new Date - global.db.data.users[m.sender].lastopen > 0) {
                     let _lksk = `${Math.floor(Math.random() * 3000)}`.trim()
                     let _lkdk = `${Math.floor(Math.random() * 3000)}`.trim()
                     let _lkek = `${Math.floor(Math.random() * 3000)}`.trim()
@@ -798,9 +798,9 @@ Anda telah membuka *Gardenboxs crate* dan mendapatkan:${lksk > 0 ? `\nBibitmangg
                 case '1':
                 case 'crate':
                     let __lastimeki = (new Date - global.db.data.users[m.sender].lastopen)
-                    let _lastimeki = (30000 - __lastimeki) 
+                    let _lastimeki = (0 - __lastimeki) 
                     let lastimeki = clockString(_lastimeki)
-                    if (new Date - global.db.data.users[m.sender].lastopen > 30000) {
+                    if (new Date - global.db.data.users[m.sender].lastopen > 0) {
                     let mm = 100000
                     let me = 100000
                     let mp = 50
@@ -826,9 +826,9 @@ Anda telah membuka *Cupon crate* dan mendapatkan:${mm > 0 ? `\nMoney: ${mm} *mon
                 break
                 case '10':
                     let __lastimekise = (new Date - global.db.data.users[m.sender].lastopen)
-                    let _lastimekise = (30000 - __lastimekise) 
+                    let _lastimekise = (0 - __lastimekise) 
                     let lastimekise = clockString(_lastimekise)
-                    if (new Date - global.db.data.users[m.sender].lastopen > 30000) {
+                    if (new Date - global.db.data.users[m.sender].lastopen > 0) {
                     let mmse = 1000000
                     let mese = 1000000
                     let mpse = 500
@@ -861,9 +861,9 @@ Anda telah membuka *Cupon crate* dan mendapatkan:${mmse > 0 ? `\nMoney: ${mmse} 
                 case '1':
                 case 'crate':
                     let __lastimel = (new Date - global.db.data.users[m.sender].lastopen)
-                    let _lastimel = (30000 - __lastimel)
+                    let _lastimel = (0 - __lastimel)
                     let lastimel = clockString(_lastimel)
-                    if (new Date - global.db.data.users[m.sender].lastopen > 30000) {
+                    if (new Date - global.db.data.users[m.sender].lastopen > 0) {
                     let _lm = `${Math.floor(Math.random() * 450)}`.trim()
                     let _le = `${Math.floor(Math.random() * 550)}`.trim()
                     let _lp = `${Math.floor(Math.random() * 5)}`.trim()
@@ -909,9 +909,9 @@ Anda telah membuka *Legendary crate* dan mendapatkan:${lm > 0 ? `\nMoney: ${lm}`
                 break
                 case '10':
                     let __lastimele = (new Date - global.db.data.users[m.sender].lastopen)
-                    let _lastimele = (30000 - __lastimele)
+                    let _lastimele = (0 - __lastimele)
                     let lastimele = clockString(_lastimele)
-                    if (new Date - global.db.data.users[m.sender].lastopen > 30000) {
+                    if (new Date - global.db.data.users[m.sender].lastopen > 0) {
                     let _lm1 = `${Math.floor(Math.random() * 10000)}`.trim()
                     let _le1 = `${Math.floor(Math.random() * 15000)}`.trim()
                     let _lp1 = `${Math.floor(Math.random() * 30)}`.trim()
@@ -933,8 +933,8 @@ Anda telah membuka *Legendary crate* dan mendapatkan:${lm > 0 ? `\nMoney: ${lm}`
                     let Lechat1 = `
 Anda telah membuka *Legendary crate* dan mendapatkan:${lm1 > 0 ? `\nMoney: ${lm1}` : ''}${le1 > 0 ? `\nExp: ${le1} *exp*` : ''}${ld1 > 0 ? `\nDiamond: ${ld1} *diamond*` : ''}${lp1 > 0 ? `\nPotion: ${lp1} *potion*` : ''}${lc1 > 0 ? `\nCommon crate: ${lc1} *crate*` : ''}${lu1 > 0 ? `\nUncommon crate: ${lu1} *crate*` : ''}
 `.trim()  
-                    if (global.db.data.users[m.sender].legendary >= 10) {
-                        global.db.data.users[m.sender].legendary -= 10
+                    if (global.db.data.users[m.sender].legendary >= 10089908999999999998999899899888988899) {
+                        global.db.data.users[m.sender].legendary -= 1000000000000000000099990900000000000
                         global.db.data.users[m.sender].money += lm1 * 1
                         global.db.data.users[m.sender].diamond += ld1 * 1
                         global.db.data.users[m.sender].exp += le1 * 1
@@ -957,9 +957,9 @@ Anda telah membuka *Legendary crate* dan mendapatkan:${lm1 > 0 ? `\nMoney: ${lm1
                 break
                 case '100':
                     let __lastimelee = (new Date - global.db.data.users[m.sender].lastopen)
-                    let _lastimelee = (30000 - __lastimelee)
+                    let _lastimelee = (0 - __lastimelee)
                     let lastimelee = clockString(_lastimelee)
-                    if (new Date - global.db.data.users[m.sender].lastopen > 30000) {
+                    if (new Date - global.db.data.users[m.sender].lastopen > 0) {
                     let _lm2 = `${Math.floor(Math.random() * 100000)}`.trim()
                     let _le2 = `${Math.floor(Math.random() * 200000)}`.trim()
                     let _lp2 = `${Math.floor(Math.random() * 100)}`.trim()
@@ -1005,9 +1005,9 @@ Anda telah membuka *Legendary crate* dan mendapatkan:${lm2 > 0 ? `\nMoney: ${lm2
                 break
                 case '1000':
                     let __lastimeleee = (new Date - global.db.data.users[m.sender].lastopen)
-                    let _lastimeleee = (30000 - __lastimeleee)
+                    let _lastimeleee = (0 - __lastimeleee)
                     let lastimeleee = clockString(_lastimeleee)
-                    if (new Date - global.db.data.users[m.sender].lastopen > 30000) {
+                    if (new Date - global.db.data.users[m.sender].lastopen > 0) {
                     let _lm3 = `${Math.floor(Math.random() * 2000000)}`.trim()
                     let _le3 = `${Math.floor(Math.random() * 5000000)}`.trim()
                     let _lp3 = `${Math.floor(Math.random() * 500)}`.trim()
@@ -1070,9 +1070,9 @@ Anda telah membuka *Legendary crate* dan mendapatkan:${lm3 > 0 ? `\nMoney: ${lm3
             let _pet = `${pickRandom(['kucing', 'rubah','serigala','naga','centaur','phonix','kuda','griffin','kyubi'])}`.trim()
             let randpet = `${pickRandom(['Anda kurang beruntung', 'Coba buka lagi lain kali, karena gk dapet pet', 'kasian gk dapet pet', 'Mungkin lagi gk hoki dan gk dapet pet', 'wkwkkwkwke'])}`.trim()
             let __lastimepet = (new Date - global.db.data.users[m.sender].lastopen)
-            let _lastimepet = (30000 - __lastimepet)
+            let _lastimepet = (0 - __lastimepet)
             let lastimepet = clockString(_lastimepet)
-            if (new Date - global.db.data.users[m.sender].lastopen > 30000) {
+            if (new Date - global.db.data.users[m.sender].lastopen > 0) {
             global.db.data.users[m.sender].lastopen = new Date * 1
             if (global.db.data.users[m.sender].pet > 0) { 
                 global.db.data.users[m.sender].pet -= 1
