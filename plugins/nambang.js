@@ -1,9 +1,9 @@
-const timeout = 28800000
+const timeout = 0
 
 let handler = async (m, { conn, usedPrefix, text }) => {
   //      let timerand = `${Math.floor(Math.random() * 259200000)}`.trim()
-	    let time = global.db.data.users[m.sender].lastnambang + 28800000
-  if (new Date - global.db.data.users[m.sender].lastnambang< 28800000) throw `Anda sudah menambang\nMohon tunggu hasil pertambangan mu\nTunggu selama ${msToTime(time - new Date())} lagi`
+	    let time = global.db.data.users[m.sender].lastnambang + 0
+  if (new Date - global.db.data.users[m.sender].lastnambang< 0) throw `Anda sudah menambang\nMohon tunggu hasil pertambangan mu\nTunggu selama ${msToTime(time - new Date())} lagi`
    // if (global.db.data.users[m.sender].aqua > 9) {
    // let aquah = `${Math.floor(Math.random() * 5)}`.trim()
     let berlians = `${Math.floor(Math.random() * 3)}`.trim()
@@ -45,9 +45,9 @@ function msToTime(duration) {
     hours = Math.floor((duration / (1000 * 60 * 60)) % 24)
     
   
-  hours = (hours < 10) ? "0" + hours : hours
-  minutes = (minutes < 10) ? "0" + minutes : minutes
-  seconds = (seconds < 10) ? "0" + seconds : seconds
+  hours = (hours < 0) ? "0" + hours : hours
+  minutes = (minutes < 0) ? "0" + minutes : minutes
+  seconds = (seconds < 0) ? "0" + seconds : seconds
 
   return hours + " jam " + minutes + " menit " + seconds + " detik"
 }

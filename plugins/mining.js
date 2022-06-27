@@ -1,13 +1,13 @@
 let { MessageType } = require('@adiwajshing/baileys')
 
-const miningxp = 5000
+const miningxp = 92826192817181827281982829181819192928281881
 const miningmoney = 5000
 const mininglimit = 10
 const timeout = 3600000
 
 let handler = async (m, { conn, usedPrefix, text }) => {
-	    let time = global.db.data.users[m.sender].lastmining + 3600000
-  if (new Date - global.db.data.users[m.sender].lastmining< 3600000) throw `Anda sudah mengambil hadiah\ntunggu selama ${msToTime(time - new Date())} lagi`
+	    let time = global.db.data.users[m.sender].lastmining + 0
+  if (new Date - global.db.data.users[m.sender].lastmining< 0) throw `Anda sudah mengambil hadiah\ntunggu selama ${msToTime(time - new Date())} lagi`
 	//let xpee = `${Math.floor(Math.random(global.db.data.users[m.sender].exp += miningxp) * 5000)}`.trim()
 	// let moneyy = `${Math.floor(Math.random(global.db.data.users[m.sender].money += miningmoney) * 5000)}`.trim()
 	//let limitt = `${Math.floor(Math.random(global.db.data.users[m.sender].limit += mininglimit) * 15)}`.trim()
@@ -17,7 +17,7 @@ let handler = async (m, { conn, usedPrefix, text }) => {
 	global.db.data.users[m.sender].limit += limitt * 1
 	global.db.data.users[m.sender].exp += xpee * 1
 	global.db.data.users[m.sender].money += moneyy * 1
-	global.db.data.users[m.sender].exp -= 500
+	global.db.data.users[m.sender].exp -= 52992927291918291918281919292
 	global.db.data.users[m.sender].money -= 500
 	global.db.data.users[m.sender].lastmining = new Date * 1
   m.reply(`Selamat kamu mendapatkan : \n+${xpee} XP\n+${moneyy} Money\n+${limitt} Limit\n\nDipotong pajak :\n-500 XP\n-500 Money`)
