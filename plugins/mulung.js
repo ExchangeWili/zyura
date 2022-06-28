@@ -1,9 +1,9 @@
 
-const timeout = 1800000
+const timeout = 0
 
 let handler = async (m, { conn, usedPrefix, text }) => {
-	    let time = global.db.data.users[m.sender].lastmulung + 1800000
-  if (new Date - global.db.data.users[m.sender].lastmulung< 1800000) throw `Anda sudah lelah untuk mulung\nTunggu selama ${msToTime(time - new Date())} lagi`
+	    let time = global.db.data.users[m.sender].lastmulung + 0
+  if (new Date - global.db.data.users[m.sender].lastmulung< 0) throw `Anda sudah lelah untuk mulung\nTunggu selama ${msToTime(time - new Date())} lagi`
 	let botolnye = `${Math.floor(Math.random() * 1000)}`.trim()
 	let kalengnye = `${Math.floor(Math.random() * 1000)}`.trim()
 	let kardusnye = `${Math.floor(Math.random() * 1000)}`.trim()
@@ -42,9 +42,9 @@ function msToTime(duration) {
     hours = Math.floor((duration / (1000 * 60 * 60)) % 24)
     
   
-  hours = (hours < 10) ? "0" + hours : hours
-  minutes = (minutes < 10) ? "0" + minutes : minutes
-  seconds = (seconds < 10) ? "0" + seconds : seconds
+  hours = (hours < 0) ? "0" + hours : hours
+  minutes = (minutes < 0) ? "0" + minutes : minutes
+  seconds = (seconds < 0) ? "0" + seconds : seconds
 
   return hours + " jam " + minutes + " menit " + seconds + " detik"
 }
