@@ -35,7 +35,7 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-Hai, %ucapan %name! 👋
+Hai, %ucapan %name
   
 *Waktu:* 
 %wib WIB
@@ -49,13 +49,13 @@ Hai, %ucapan %name! 👋
 *Limit:* %limit
 *Level:* %level
 *XP:* %exp
-*Money:* %money
+*Database:* %totalreg
 %readmore`.trimStart(),
   header: ' *%category*',
   body: ' • %cmd %islimit %isPremium',
   footer: '\n',
   after: `MADE BY
- ZIO |  Library : *Baileys-MD*.
+ ZIO |  Library : *Baileys-MD*
  ╭─❒ 「 TqTo 」 
 ├ My God
 ├ My Parents
@@ -237,19 +237,19 @@ function clockString(ms) {
 
 function ucapan() {
         const hour_now = moment.tz('Asia/Jakarta').format('HH')
-        var ucapanWaktu = 'Pagi Dek'
+        var ucapanWaktu = 'Pagi 🌄'
         if (hour_now >= '03' && hour_now <= '10') {
-          ucapanWaktu = 'Pagi Dek'
+          ucapanWaktu = 'Pagi 🌄'
         } else if (hour_now >= '10' && hour_now <= '15') {
-          ucapanWaktu = 'Siang Dek'
+          ucapanWaktu = 'Siang 🌇'
         } else if (hour_now >= '15' && hour_now <= '17') {
-          ucapanWaktu = 'Sore Dek'
+          ucapanWaktu = 'Sore 🌁'
         } else if (hour_now >= '17' && hour_now <= '18') {
-          ucapanWaktu = 'Selamat Petang Dek'
+          ucapanWaktu = 'Selamat Petang 🌆'
         } else if (hour_now >= '18' && hour_now <= '23') {
-          ucapanWaktu = 'Malam Dek'
+          ucapanWaktu = 'Malam 🌌'
         } else {
-          ucapanWaktu = 'Selamat Malam!'
+          ucapanWaktu = 'Selamat Malam 🌃'
         }	
         return ucapanWaktu
 }
