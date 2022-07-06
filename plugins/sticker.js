@@ -17,7 +17,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         else if (/image/g.test(mime)) out = await uploadImage(img)
         else if (/video/g.test(mime)) out = await uploadFile(img)
         if (!isUrl(out)) out = await uploadImage(img)
-        stiker = await sticker(false, out, global.packname, global.author)
+        stiker = await sticker(false, out, global.ZIO, global.MULTI DEVICE)
       } catch (e) {
         console.error(e)
         if (!stiker) stiker = await sticker(img, false, global.packname, global.author)
