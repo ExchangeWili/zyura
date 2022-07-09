@@ -179,7 +179,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     conn.sendHydrated(m.chat, text.trim(), 'Ⓟ premium | Ⓛ limit', null, '-', 'Website', '', '', [
       ['Donate', '/donasi'],
       ['Sewa Bot', '/sewa'],
-      ['Owner', '/owner']
+      ['Creator', '/creator']
     ], m)
     /*let url = `https://telegra.ph/file/ab1df70dfd5c2bac64da1.jpg`.trim()
     let res = await fetch(url)
@@ -208,8 +208,8 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Owner',
-                                    id: '/owner'
+                                    displayText: 'creator',
+                                    id: '/creator'
                                 }
                             }]
                         }
