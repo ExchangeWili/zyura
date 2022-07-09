@@ -54,6 +54,9 @@ const defaultMenu = {
 *Date:* %date
 *Islamic Date:* %dateIslamic
 *Time:* %wib %wita %wit
+*WIB:* %wib
+*WITA:* %wita
+*WIT:* %wit
 
 *I N F O*
 *Bot Name:* %me
@@ -63,18 +66,15 @@ const defaultMenu = {
 *Uptime:* %uptime
 *Database:* %rtotalreg dari %totalreg
 *Version:* %version
-*My Github:* %github
 
 *I N F O  C M D* 
 *Ⓟ* = Premium
 *Ⓛ* = Limit
 
-%readmore
-`.trimStart(),
-  header: '%cc *%category* %c1',
-  body: '%c2 %cmd %isPremium %islimit',
-  footer: '%c3',
-  after: `%c4 %me`,
+%readmore`.trimStart(),
+  header: ' *%category*',
+  body: ' • %cmd %islimit %isPremium',
+  footer: '\n',
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
   try {
