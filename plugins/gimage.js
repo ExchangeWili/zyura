@@ -10,8 +10,9 @@ let handler  = async (m, { conn, args, text }) => {
   conn.sendFile(m.chat, url, 'gimage', `
 *── 「 GOOGLE IMAGE 」 ──*
 ${text}
-➸ *width*: ${width}
-➸ *height*: ${height}
+➸ *WIDTH*: ${width}
+➸ *HEIGHT*: ${height}
+➸ *MAAF BRO KALAU NGEBUG FOTONYA*
 `.trim(), m)
 }
 handler.help = ['gimage <search>']
@@ -23,3 +24,4 @@ module.exports = handler
 
 function pickRandom(arr) {
   return arr[Math.floor(Math.random() * arr.length)]
+}
