@@ -45,13 +45,15 @@ const defaultMenu = {
 *Level:* %level [ %xp4levelup Exp For Levelup]
 *Exp:* %exp / %maxexp
 *Total Exp:* %totalexp
+*Role:* %role
+*Status:* %prem
 
 *T O D A Y*
 *%ucapan*
 *Days:* %week %weton
 *Date:* %date
 *Islamic Date:* %dateIslamic
-*Time:* %wib
+*Time:* %wib %wita %wit
 
 *I N F O*
 *Bot Name:* %me
@@ -60,7 +62,8 @@ const defaultMenu = {
 *Prefix:* [ *%p* ]
 *Uptime:* %uptime
 *Database:* %rtotalreg dari %totalreg
-*Role:* %role
+*Version:* %version
+*My Github:* %github
 
 *I N F O  C M D* 
 *Ⓟ* = Premium
