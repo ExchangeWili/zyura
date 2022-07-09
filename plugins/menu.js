@@ -35,46 +35,50 @@ let tags = {
 }
 const defaultMenu = {
   before: `
+*IZUMI BOT CREATED BY ZIO*
 
-*BOT BY ZIO*
+*INFO BOT*
+*Name Bot:* %me
+*Uptime:* %uptime
+*Version:* %version
+*Script:* %github
+*Database:* %totalreg
+*Registered Database:* %rtotalreg
+*Prefix:* [%p]
+*Baileys:* Multi Device
+*Type:* NodeJs
 
-*S T A T U S  U S E R*
-*Name:* %name
+*INFO USER*
+%ucapan
+*User:* %name
+*Level:* %level
+*Exp:* %exp
 *Limit:* %limit
-*Money:* %money
 *Role:* %role
-*Level:* %level [ %xp4levelup Exp For Levelup]
-*Exp:* %exp / %maxexp
-*Total Exp:* %totalexp
-*Role:* %role
-
-*T O D A Y*
-*%ucapan*
+*LevelUp:* %xp4levelup
+*MaxExp:* %maxexp
+*TotalExp:* %totalexp
+  
+*TIME AND DATE:* 
 *Day:* %week
 *Date:* %date
-*Islamic Date:* %dateIslamic
-*Time:*
+
+%wit WIT
+*Hari:* %week
+*Tanggal:* %date
+*Islamic Date:* %dateislamic
 *WIB:* %wib
 *WITA:* %wita
 *WIT:* %wit
-
-*I N F O*
-*Bot Name:* %me
-*Type:* Node.Js
-*Baileys:* Multi Device
-*Prefix:* [ *%p* ]
-*Uptime:* %uptime
-*Database:* %rtotalreg dari %totalreg
-*Version:* %version
-
-*I N F O  C M D* 
-*Ⓟ* = Premium
-*Ⓛ* = Limit
 
 %readmore`.trimStart(),
   header: ' *%category*',
   body: ' • %cmd %islimit %isPremium',
   footer: '\n',
+  after: `Made BY
+   ZIO | TEMPEST
+${'```%npmdesc```'}
+`,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
   try {
