@@ -237,17 +237,17 @@ function clockString(ms) {
 
 function ucapan() {
         const hour_now = moment.tz('Asia/Jakarta').format('HH')
-        var ucapanWaktu = 'Pagi 🌄'
+        var ucapanWaktu = 'Selamat Pagi 🌄'
         if (hour_now >= '03' && hour_now <= '10') {
-          ucapanWaktu = 'Pagi 🌄'
+          ucapanWaktu = 'Selamat Pagi 🌄'
         } else if (hour_now >= '10' && hour_now <= '15') {
-          ucapanWaktu = 'Siang 🌇'
+          ucapanWaktu = 'Selamat Siang 🌇'
         } else if (hour_now >= '15' && hour_now <= '17') {
-          ucapanWaktu = 'Sore 🌁'
+          ucapanWaktu = 'Selamat Sore 🌁'
         } else if (hour_now >= '17' && hour_now <= '18') {
           ucapanWaktu = 'Selamat Petang 🌆'
         } else if (hour_now >= '18' && hour_now <= '23') {
-          ucapanWaktu = 'Malam 🌌'
+          ucapanWaktu = 'Selamat Malam 🌌'
         } else {
           ucapanWaktu = 'Selamat Malam 🌃'
         }	
