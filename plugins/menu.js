@@ -35,6 +35,7 @@ let tags = {
 }
 const defaultMenu = {
   before: `
+
 *BOT BY ZIO*
 
 *S T A T U S  U S E R*
@@ -46,14 +47,13 @@ const defaultMenu = {
 *Exp:* %exp / %maxexp
 *Total Exp:* %totalexp
 *Role:* %role
-*Status:* %prem
 
 *T O D A Y*
 *%ucapan*
-*Days:* %week %weton
+*Day:* %week
 *Date:* %date
 *Islamic Date:* %dateIslamic
-*Time:* %wib %wita %wit
+*Time:*
 *WIB:* %wib
 *WITA:* %wita
 *WIT:* %wit
