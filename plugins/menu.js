@@ -35,42 +35,47 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-Hai, %ucapan %name
-  
-*Waktu:* 
-%wib WIB
-%wita WITA
-%wit WIT
+%dash
+%m2 *Name:* %name
+%m2 *Tag:* %tag
+%m2 *Status:* %prems
+%m2 *Limit:* %limit
+%m2 *Money:* %money
+%m2 *Role:* %role
+%m2 *Level:* %level [ %xp4levelup Xp For Levelup]
+%m2 *Xp:* %exp / %maxexp
+%m2 *Total Xp:* %totalexp
+%m3
 
-*Hari:* %week
-*Tanggal:* %date
-*Uptime:* %uptime (%muptime)
+%m1 *T O D A Y*
+%m2 *%ucapan*
+%m2 *Days:* %week %weton
+%m2 *Date:* %date
+%m2 *Islamic Date:* %dateIslamic
+%m2 *Time:* %wib
+%m3 
 
-*Limit:* %limit
-*Level:* %level
-*XP:* %exp
-*Database:* %totalreg
-%readmore`.trimStart(),
-  header: ' *%category*',
-  body: ' • %cmd %islimit %isPremium',
-  footer: '\n',
-  after: `MADE BY
- ZIO |  Library : *Baileys-MD*
- ╭─❒ 「 TqTo 」 
-├ My God
-├ My Parents
-├ Fatih A.
-├ Ferdi
-├ DikaArdnt
-├ Kyura/Zio
-├ Nurutomo
-├ Rashid
-├ KingOfBear
-├ Aine
-├ ZeeoneOfc
-├ Penyedia Module
-╰❒ And All Support
-`,
+%m1 *I N F O*
+%m2 *Bot Name:* %me
+%m2 *Mode:* %mode
+%m2 *Platform:* %platform
+%m2 *Type:* Node.Js
+%m2 *Baileys:* Multi Device
+%m2 *Prefix:* [ *%p* ]
+%m2 *Uptime:* %uptime
+%m2 *Database:* %rtotalreg dari %totalreg
+%m3 *Role:* %role
+
+%m1 *I N F O  C M D* 
+%m4 *Ⓟ* = Premium
+%m4 *Ⓛ* = Limit
+%m3
+%readmore
+`.trimStart(),
+  header: '%cc *%category* %c1',
+  body: '%c2 %cmd %isPremium %islimit',
+  footer: '%c3',
+  after: `%c4 %me`,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
   try {
