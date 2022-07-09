@@ -35,41 +35,37 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-%dash
-%m2 *Name:* %name
-%m2 *Tag:* %tag
-%m2 *Status:* %prems
-%m2 *Limit:* %limit
-%m2 *Money:* %money
-%m2 *Role:* %role
-%m2 *Level:* %level [ %xp4levelup Xp For Levelup]
-%m2 *Xp:* %exp / %maxexp
-%m2 *Total Xp:* %totalexp
-%m3
+*BOT BY ZIO*
 
-%m1 *T O D A Y*
-%m2 *%ucapan*
-%m2 *Days:* %week %weton
-%m2 *Date:* %date
-%m2 *Islamic Date:* %dateIslamic
-%m2 *Time:* %wib
-%m3 
+*S T A T U S  U S E R*
+*Name:* %name
+*Limit:* %limit
+*Money:* %money
+*Role:* %role
+*Level:* %level [ %xp4levelup Xp For Levelup]
+*Exp:* %exp / %maxexp
+*Total Xp:* %totalexp
 
-%m1 *I N F O*
-%m2 *Bot Name:* %me
-%m2 *Mode:* %mode
-%m2 *Platform:* %platform
-%m2 *Type:* Node.Js
-%m2 *Baileys:* Multi Device
-%m2 *Prefix:* [ *%p* ]
-%m2 *Uptime:* %uptime
-%m2 *Database:* %rtotalreg dari %totalreg
-%m3 *Role:* %role
+*T O D A Y*
+*%ucapan*
+*Days:* %week %weton
+*Date:* %date
+*Islamic Date:* %dateIslamic
+*Time:* %wib
 
-%m1 *I N F O  C M D* 
-%m4 *Ⓟ* = Premium
-%m4 *Ⓛ* = Limit
-%m3
+*I N F O*
+*Bot Name:* %me
+*Type:* Node.Js
+*Baileys:* Multi Device
+*Prefix:* [ *%p* ]
+*Uptime:* %uptime
+*Database:* %rtotalreg dari %totalreg
+*Role:* %role
+
+*I N F O  C M D* 
+*Ⓟ* = Premium
+*Ⓛ* = Limit
+
 %readmore
 `.trimStart(),
   header: '%cc *%category* %c1',
