@@ -1,7 +1,7 @@
 let fs = require('fs') 
 let chalk = require('chalk')
 
-global.owner = [
+global.creator = [
   ['6288287037007'],
   ['6288287037007'],
   ['6288287037007', 'OwnerKyura', true]
