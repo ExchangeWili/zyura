@@ -27,7 +27,7 @@ let tags = {
   'catatan': 'Catatan',
   'jadian': 'Jadian',
   'islami': 'Islami',
-  'owner': 'Owner',
+  'creator': 'Creator',
   'advanced': 'Advanced',
   'info': 'Info',
   'audio': 'Audio',
