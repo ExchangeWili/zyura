@@ -42,9 +42,9 @@ const defaultMenu = {
 *Limit:* %limit
 *Money:* %money
 *Role:* %role
-*Level:* %level [ %xp4levelup Xp For Levelup]
+*Level:* %level [ %xp4levelup Exp For Levelup]
 *Exp:* %exp / %maxexp
-*Total Xp:* %totalexp
+*Total Exp:* %totalexp
 
 *T O D A Y*
 *%ucapan*
