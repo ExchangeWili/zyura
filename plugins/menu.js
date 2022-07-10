@@ -35,7 +35,7 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-
+*%ucpan*
 *INFO BOT*
 *Name Bot:* %me
 *Uptime:* %uptime
@@ -61,11 +61,8 @@ const defaultMenu = {
 *TIME AND DATE:* 
 *Day:* %week
 *Date:* %date
-
-%wit WIT
-*Hari:* %week
-*Tanggal:* %date
 *Islamic Date:* %dateislamic
+*TIME*
 *WIB:* %wib
 *WITA:* %wita
 *WIT:* %wit
@@ -244,19 +241,19 @@ function clockString(ms) {
 
 function ucapan() {
         const hour_now = moment.tz('Asia/Jakarta').format('HH')
-        var ucapanWaktu = 'Selamat Pagi 🌄'
+        var ucapanWaktu = 'Good Morning 🌄'
         if (hour_now >= '03' && hour_now <= '10') {
-          ucapanWaktu = 'Selamat Pagi 🌄'
+          ucapanWaktu = 'Good Morning 🌄'
         } else if (hour_now >= '10' && hour_now <= '15') {
-          ucapanWaktu = 'Selamat Siang 🌇'
+          ucapanWaktu = 'Good Afternoon 🌇'
         } else if (hour_now >= '15' && hour_now <= '17') {
-          ucapanWaktu = 'Selamat Sore 🌁'
+          ucapanWaktu = 'Good Afternoon 🌁'
         } else if (hour_now >= '17' && hour_now <= '18') {
-          ucapanWaktu = 'Selamat Petang 🌆'
+          ucapanWaktu = 'Good Afternoon🌆'
         } else if (hour_now >= '18' && hour_now <= '23') {
-          ucapanWaktu = 'Selamat Malam 🌌'
+          ucapanWaktu = 'Good Night 🌌'
         } else {
-          ucapanWaktu = 'Selamat Malam 🌃'
+          ucapanWaktu = 'Good Night 🌃'
         }	
         return ucapanWaktu
 }
