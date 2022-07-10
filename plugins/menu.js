@@ -74,7 +74,7 @@ const defaultMenu = {
   footer: '\n',
   after: `Made BY
    ZIO | TEMPEST
-${'```%npmdesc```'}
+${'```%npmdesc```'} SCRIPT BAILEYS MULTI DEVICE
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
