@@ -35,7 +35,7 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-*%ucpan*
+*%ucapan*
 *INFO BOT*
 *Name Bot:* %me
 *Uptime:* %uptime
@@ -58,7 +58,8 @@ const defaultMenu = {
 *MaxExp:* %maxexp
 *TotalExp:* %totalexp
   
-*TIME AND DATE:* 
+*TIME AND DATE:*
+*Day In West Java:* %weton
 *Day:* %week
 *Date:* %date
 *Islamic Date:* %dateislamic
@@ -249,7 +250,7 @@ function ucapan() {
         } else if (hour_now >= '15' && hour_now <= '17') {
           ucapanWaktu = 'Good Afternoon 🌁'
         } else if (hour_now >= '17' && hour_now <= '18') {
-          ucapanWaktu = 'Good Afternoon🌆'
+          ucapanWaktu = 'Good Evening 🌆'
         } else if (hour_now >= '18' && hour_now <= '23') {
           ucapanWaktu = 'Good Night 🌌'
         } else {
