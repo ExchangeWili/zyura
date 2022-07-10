@@ -10,13 +10,40 @@ let handler = async (m, { conn }) => {
   let d = await fetch(c).then(a => a.buffer())
   let prepare = await require('@adiwajshing/baileys').generateWAMessageFromContent(m.key.remoteJid,{listMessage:{
   title: `${await conn.getName(conn.user.jid)}`,
-  description: ` *• FREE BOT •*
-CARA ADD BOT DI GROUP? SAVE NOMER BOT TERUS ADD KE GROUP KAMU
-MAAF JIKA JARAN ONLINE OWNER MALES 
+  description: ` *• SEWA BOT & UP TO PREMIUM •*
+        
+1. Grup / 30 Hari
+Rp. 0 Dana
+Rp. 0 Pulsa
+
+2. Premium / 30 Hari
+Rp. 0 Dana
+Rp. 0 Pulsa
+
+3. Premium + Grup / 30 Hari
+Rp. 0 Dana
+Rp. 0 Pulsa
+
 wa.me/${owner[0]}
-*Owner Bukan Bot*
+*Bukan Bot!!!*
 *Owner ${conn.user.name}*
 `,
+  buttonText: '-',
+  listType: 2,
+  productListInfo: {
+  productSections: [{
+  title:'-',
+  products:[{productId:'-'}]}],
+  headerImage: { productId: '-',
+  jpegThumbnail: baper },
+  businessOwnerJid: `6288287037007@s.whatsapp.net`
+  },
+  footerText: '-',
+  }},{})
+  conn.relayMessage(prepare.key.remoteJid,prepare.message,{messageId:prepare.key.id})
+  const data = global.owner.filter(([id, isCreator]) => id && isCreator)
+  conn.sendContact(m.chat, data.map(([id, name]) => [id, name]), m)
+
 }
 handler.help = ['sewa']
 handler.tags = ['main']
